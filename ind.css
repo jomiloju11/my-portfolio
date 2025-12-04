@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root{
+background-color: black;
+}
+body{
+    margin: 0;
+}
+.navbar 
+{
+text-align: end;
+color: rgb(255, 255, 255);
+text-decoration: solid;
+display: flex;
+justify-content: flex-end;
+padding: 0 0 0 0;
+}
+
+.about-me
+{
+    color: rgb(255, 252, 252);
+    text-decoration: solid;
+box-shadow: 12px 12px 2px 1px rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-shadow: 5px 5px 5px rgb(255, 255, 255);
+
+padding: 2em;
+overflow: hidden;
+position: relative;
+border-bottom: 2px solid white;
+align-items: center;
+width: 10%
+}
+
+
+
+.Resume{
+     color: rgb(244, 244, 244);
+    text-decoration: solid;
+box-shadow: 12px 12px 2px 1px rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-shadow: 5px 5px 5px rgb(255, 255, 255);
+padding: 2em;
+overflow: hidden;
+position: relative;
+border-bottom: 2px solid white;
+width: 10%
+}
+
+
+.Projects{
+      color: rgb(255, 254, 254);
+    text-decoration: solid;
+box-shadow: 12px 12px 2px 1px rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-shadow: 5px 5px 5px rgb(255, 255, 255);
+padding: 2em;
+overflow: hidden;
+position: relative;
+border-bottom: 2px solid white;
+width: 10%
+
+}
+
+.Linkedin{
+      color: rgb(255, 243, 243);
+    text-decoration: solid;
+box-shadow: 12px 12px 2px 1px rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-shadow: 5px 5px 5px rgb(255, 250, 250);
+padding: 2em;
+border-bottom: 2px solid white;
+overflow: hidden;
+position: relative;
+width: 10%
+
+}
+
+.Github{
+     color: rgb(255, 255, 255);
+    text-decoration: solid;
+box-shadow: 12px 12px 2px 1px rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-shadow: 5px 5px 5px rgb(255, 255, 255);
+padding: 2em;
+border-bottom: 2px solid white;
+overflow: hidden;
+position: relative;
+width: 10%;
+gap: 0%;
+}
+
+.fab.fa-linkedin.fa-2x{
+    color: #0077B5;
+ 
+}
+.fab.fa-github.fa-2x{
+    color: white;}
+
+       
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d; 
+    background-image: url(""); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1; 
+    top: 0;
+    left: 0;
+}
+.your-content-class {
+    position: relative; 
+    z-index: 1;
+    color: white;
+
+}
+
+.hero-name{
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+h1{
+    font-family: 'poppins';
+    font-size: 4rem;
+    font-weight: 700;
+    color:#ffffff;
+    line-height: 1.2;
+margin: 0;
+}
+.red-text{
+    color: #e60000;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+/* Styling for the new About Me section */
+.about-section {
+    position: relative;
+    z-index: 1; /* Ensures text sits on top of particles */
+    padding: 100px 10%; /* Spacing around the text */
+    color: #ffffff;
+    min-height: 50vh; /* Takes up half the screen height */
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black box for readability */
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #e60000; /* Red accent line */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.about-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.about-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e60000;
+    color: white;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease trnsform 0.2s;
+}
+.download-btn:hover{
+    background-color: #ff3333;
+    transform: scale(1.05);
+    color: white;
+}
+.resume-section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 10%;
+    color: #ffffff;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* This pushes the box to the right side */
+    text-align: right;         /* Aligns text inside the box to the right */
+}
+
+/* 2. Resume Content Box (The card background) */
+.resume-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 30px;
+    border-radius: 10px;
+    border-right: 4px solid #e60000; /* Red line on the right side */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    
+    /* Prepare for animation */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+/* The visible state (JavaScript adds this class) */
+.resume-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 3. Text Styling */
+.resume-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.resume-content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}

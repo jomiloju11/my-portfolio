@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+     <link rel="stylesheet" href="ind.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');</style>
+
+</head>
+<body>
+    <nav class="navbar">  
+        <a class="about-me animated-link" href="#about-me">About me </a>
+          <a class="Resume animated-link" href="#resume">Resume</a>
+        <a class="Projects animated-link" href="#Projects">Projects</a>
+        <a class="Linkedin animated-link" href="https://www.linkedin.com/in/oluwajomiloju-obafunmi-a1a285335/" target="_blank">My Linkedin <i class="fab fa-linkedin fa-2x"></i></a>
+        <a class="Github animated-link" href="https://github.com/jomiloju11" target="_blank">My Github <i class="fab fa-github fa-2x"></i></a>
+    </nav> <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="hero-name">
+            <h1>Hi, <br>
+            I'm <span class="red-text">Jomiloju</span></h1><br>
+        </div>
+        </div>
+    <section id="about-me" class="about-section">
+      <div class="about-content">
+        <h2>About<span class="red-text"></span> me</h2>
+        <p>Hello! I'm Jomiloju a CS grad from Caleb University, I enjoy solving complex problems and 
+            turning creative ideas into reality using code</p>
+      </div>
+    </section>
+    <section id="resume" class="resume-section">
+    <div class="resume-content">
+        <h2>My <span class="red-text">Resume</span></h2>
+        <p>
+            You can view my full professional history, education, and skills by downloading my CV below.
+        </p>
+        <a href="jomi_cv.pdf" download="Jomiloju_Obafunmi_CV" class="download-btn">
+            Download CV <i class="fas fa-download"></i>
+        </a>
+    </div>
+</section>
+<script src="ind.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80, // Number of dots
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff" // Color of the dots
+        },
+        "shape": {
+          "type": "circle",
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+        },
+        "line_linked": {
+          "enable": true, // THIS IS THE KEY SETTING FOR THE LINES
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+        }
+      },
+      "interactivity": {
+        "detect_on": "window",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse" // Moves dots away when you hover
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+</script>
+</body>
+</html>
