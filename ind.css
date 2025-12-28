@@ -243,4 +243,36 @@ margin: 0;
     font-size: 1.2rem;
     margin-bottom: 30px;
     line-height: 1.6;
+
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    .navbar a {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        padding: 0 5%;
+    }
+    
+    .about-content,
+    .resume-content {
+        padding: 20px;
+    }
+    
+    .about-content h2,
+    .resume-content h2 {
+        font-size: 2rem;
+    }
 }
